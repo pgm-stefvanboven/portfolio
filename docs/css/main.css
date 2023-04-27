@@ -181,8 +181,8 @@ div.clock {
   height: 40%;
 }
 
-.icon:hover {
-  transform: scale(1.2);
+.contact-listitem:hover {
+  transform: scale(1.1);
   transition: all 0.5s cubic-bezier(1,.99,0,0);
 }
 
