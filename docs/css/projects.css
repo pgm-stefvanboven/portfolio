@@ -127,7 +127,6 @@ div.clock {
   font-size: 1.5rem;
   line-height: 1.5;
   color: #333;
-  background-color: goldenrod;
 }
 
 .intro {
@@ -201,11 +200,33 @@ div.clock {
     border-color: #ccc;
 }
 
-/* styling footer */
+/* styling footer */ 
 .footer {
-    background-color: #f1f1f1;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 0.5rem;
-    border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socals-icon {
+  margin-right: 0.5rem;
+  width: 10%;
+  height: 10%;
+  padding: 0 1rem;
+}
+
+.footer-socals-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.5s cubic-bezier(1,.99,0,0);
 }
