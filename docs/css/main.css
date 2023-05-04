@@ -150,10 +150,8 @@ div.clock {
   list-style-type: none;
   margin: 0;
   padding: 0 1rem;
-  border-radius: 0;
+  border-radius: 1rem;
   border: 1px solid #ccc;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   font-size: 1.5rem;
@@ -186,34 +184,15 @@ div.clock {
   transition: all 0.5s cubic-bezier(1,.99,0,0);
 }
 
-
-/* styling footer */ 
-.footer {
-  background-color: #f1f1f1;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
+.work-link {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.footer-socials {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-socals-icon {
-  margin-right: 0.5rem;
-  width: 10%;
-  height: 10%;
-  padding: 0 1rem;
-}
-
-.footer-socals-icon:hover {
-  transform: scale(1.2);
+.work-link:hover {
+  color: #666;
   transition: all 0.5s cubic-bezier(1,.99,0,0);
 }
+
+/* styling footer in footer.css file */ 
