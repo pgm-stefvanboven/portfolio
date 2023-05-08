@@ -1,0 +1,90 @@
+/* Default styles for all screens */
+.header {
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.header__container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 25%;
+    height: 25%;
+    margin-left: 5rem;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    transition: all 0.5s cubic-bezier(1, .99, 0, 0);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.link {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Media query for screens with a width of 600px or more */
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 0%;
+        height: 0%;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+}
+
+
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.link:hover {
+    background-color: #666;
+    color: white;
+    border-radius: 2rem;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    transform: translateX(-86%);
+}
+
+#message h2 {
+    animation: blinker 1s linear infinite;
+}
+
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
