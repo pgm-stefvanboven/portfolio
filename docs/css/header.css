@@ -11,15 +11,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1rem;
 }
 
 .logo {
+    padding: 0 1rem;
+}
+
+.logo-image {
     width: 25%;
     height: 25%;
     margin-left: 5rem;
+    padding: 0 1rem;
 }
 
-.logo:hover {
+.logo-image:hover {
     transform: scale(1.2);
     transition: all 0.5s cubic-bezier(1, .99, 0, 0);
 }
