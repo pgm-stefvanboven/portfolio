@@ -130,4 +130,67 @@ div.clock {
   color: black;
 }
 
+/* Styling of my project cards from the projectpage */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  background-color: #fff;
+  border-radius: .3125rem;
+}
+
+.card {
+  border-radius: .3125rem;
+  box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.2);
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: .3125rem;
+  border-top-right-radius: .3125rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.card-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+
+.card-links a {
+  padding: .625rem 1.25rem;
+  border: .0625rem solid #ccc;
+  border-radius: .3125rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #333;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.card-links a:hover {
+  background-color: #ccc;
+  color: #fff;
+  border-color: #ccc;
+  border-radius: 2rem;
+}
+
 /* styling footer in footer.css file */ 
