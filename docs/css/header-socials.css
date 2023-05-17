@@ -30,14 +30,14 @@
 }
 
 /* For screens smaller than 768px */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .header-socials {
         flex-direction: row;
         align-items: center;
         justify-content: center;
         padding: auto;
         margin: auto;
-        margin-left: 0.5rem;
+        margin-left: 0rem;
     }
 
     .header-ul-list {
@@ -47,9 +47,9 @@
     }
 
     .header-socials-icon {
-        width: 25px;
-        height: 25px;
-        padding: 0.5rem;
+        width: 10%;
+        height: 10%;
+        padding: 1rem;
     }
 }
 
@@ -61,7 +61,7 @@
         justify-content: center;
         padding: auto;
         margin: auto;
-        margin-left: 0.5rem;
+        margin-left: 0;
     }
 
     .header-ul-list {
@@ -71,9 +71,9 @@
     }
 
     .header-socials-icon {
-        width: 25px;
-        height: 25px;
-        padding: 0.5rem;
+        width: 10%;
+        height: 10%;
+        padding: 1rem;
     }
 }
   

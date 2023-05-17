@@ -8,6 +8,7 @@
     <title>Stef Van Boven | ThinkTap</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/header-socials.css">
+    <link rel="stylesheet" href="../css/dropdown.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -70,6 +71,32 @@
         </div>
     </div>
 
+    <div class="dropdown">
+        <button class="dropdown-toggle" onclick="toggleDropdown()">Menu</button>
+        <div class="dropdown-menu" id="myDropdown">
+            <a href="https://www.linkedin.com/in/stef-van-boven/" target="_blank">
+                <img class="header-socials-icon" src="../images/linkedin.png" alt="linkedin-logo">
+            </a>
+            
+            <a href="https://github.com/pgm-stefvanboven" target="_blank">
+                <img class="header-socials-icon" src="../images/github.png" alt="github-logo">
+            </a>
+
+            <a href="mailto:stefvboven2020@outlook.com">
+                <img class="header-socials-icon" src="../images/outlook.png" alt="email-logo">
+            </a>
+
+            <a href="tel:0479777901">
+                <img class="header-socials-icon" src="../images/phone-call.png" alt="phone-logo">
+            </a>
+
+            <a class="link" href="../index.html">Home</a>
+            <a class="link" href="../skills.html">Skills</a>
+            <a class="link active" href="../projects.html">Projecten</a>
+            <a class="link" href="../contact.html">Contact</a>
+        </div>
+    </div>
+
     <div class="container">
         <div class="intro">
             <h1>
@@ -90,7 +117,7 @@
             </div>
         </div>
     </div>
-
+    <script src="../js/dropdown.js"></script>
 </body>
 
 </html>
