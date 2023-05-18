@@ -18,28 +18,7 @@
 
 /* styling header in header.css file*/
 
-/* styling of my digital clock */
-div.clock {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-  transition: all 0.5s ease-in-out;
-  transform: translateX(-50%);
-  position: relative;
-  width: 30rem;
-  height: 3rem;
-  overflow: hidden;
-  font-size: 48px;
-}
 
-.time {
-  display: inline-block;
-  padding: 0 10px;
-}
 
 /* Media query for screens with a width of 768px or more */
 @media screen and (max-width: 1009.60px) {
