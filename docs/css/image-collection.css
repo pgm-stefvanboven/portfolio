@@ -1,0 +1,13 @@
+.image-collection__container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-collection__container-image {
+    margin: 10px;
+}
+
+.image-collection__container-image img {
+    max-width: 100%;
+    height: auto;
+}
