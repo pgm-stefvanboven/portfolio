@@ -1,3 +1,57 @@
+/* Progress bars styling */
+.skills {
+  margin-top: 20px;
+}
+
+.skill {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.skill-percentage {
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.skill-bar {
+  flex-grow: 1;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  width: 0;
+  background-color: #4CAF50;
+}
+
+.skill-progress.html {
+  width: 80%;
+}
+
+.skill-progress.css {
+  width: 80%;
+}
+
+.skill-progress.js {
+  width: 60%;
+}
+
+
+/* technologies cards styling */
 .technologies-cards {
   display: flex;
   flex-wrap: wrap;
@@ -20,6 +74,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 10%;
   }
   
