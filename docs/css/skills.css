@@ -1,4 +1,3 @@
-/* Progress bars styling */
 .skills {
   margin-top: 20px;
 }
@@ -30,11 +29,17 @@
   background-color: #f0f0f0;
   border-radius: 10px;
   overflow: hidden;
+  position: relative; /* Nieuwe regel */
 }
 
 .skill-progress {
   height: 100%;
-  width: 0;
+  position: absolute; /* Nieuwe regel */
+  left: 0; /* Nieuwe regel */
+}
+
+.skill-progress-inner {
+  height: 100%;
   background-color: #4CAF50;
 }
 
@@ -49,6 +54,7 @@
 .skill-progress.js {
   width: 60%;
 }
+
 
 
 /* technologies cards styling */
