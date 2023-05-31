@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stef Van Boven | HAWK</title>
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/download-button.css">
     <link rel="stylesheet" href="../css/dropdown.css">
     <link rel="stylesheet" href="../css/social-media.css">
+    <link rel="stylesheet" href="../css/image-collection-HAWK.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/main-socials.css">
     <link rel="stylesheet" href="../css/detail.css">
@@ -111,7 +113,7 @@
                 </h2>
 
                 <p>
-                    In mijn vorige opleiding heb ik als eindwerk een huis automatisatie gemaakt met het domotica systeem KNX met als naam HAWK. Waarom HAWK? Home Automation With KNX. KNX is een standaard voor gebouwautomatisering die wordt gebruikt om verschillende elektrische apparaten en systemen in een gebouw met elkaar te laten communiceren. Het is ontworpen om flexibele en schaalbare oplossingen te bieden voor het beheer en de controle van verlichting, verwarming, ventilatie, airconditioning, beveiligingssystemen, energiebeheer en andere gebouwgerelateerde functies.
+                    In mijn vorige opleiding heb ik als eindwerk een huis automatisatie gemaakt met het domotica systeem KNX met als naam HAWK. Waarom HAWK? Home Automation With KNX. KNX is een standaard voor gebouwautomatisering die wordt gebruikt om verschillende elektrische apparaten en systemen in een gebouw met elkaar te laten communiceren. Het is ontworpen om flexibele en schaalbare oplossingen te bieden voor het beheer en de controle van verlichting, stopcontacten, rolluiken en nog vele andere gebouwgerelateerde functies.
                 </p>
             </div>
 
@@ -121,7 +123,7 @@
                 </h2>
 
                 <p>
-                    Ik heb dit project gemaakt met behulp van de software ETS6 (Engineering Tool Software) van KNX. Met deze software kan je de KNX componenten programmeren en configureren.
+                    Ik heb dit project gemaakt met behulp van het softwareprogramma ETS6 (Engineering Tool Software) van KNX. Met deze software kan je de KNX componenten programmeren en configureren. Dit project bestaat uit 2 onderdelen het eerste onderdeel is een didactische wand ontwikkelen en onderdeel twee is die didactische wand volledig gestuurd laten worden met KNX.
                 </p>
             </div>
 
@@ -131,7 +133,7 @@
                 </h2>
 
                 <p>
-                    Dit project is met trots gemaakt door mezelf (Stef Van Boven).
+                    Dit project is met trots gemaakt door mezelf (Stef Van Boven) en medestudent Islam Khusaev.
                 </p>
             </div>
 
@@ -144,36 +146,56 @@
                 </p>
                 <div class="image-collection__container">
                     <div class="image-collection__container-image">
-                        <img src="../images" alt="">
+                        <img src="../images/HAWK-detail-pictures/HAWK-foto-1.jpg" alt="HAWK">
+                    </div>
+                
+                    <div class="image-collection__container-image">
+                        <img src="../images/HAWK-detail-pictures/HAWK-foto-2.jpg" alt="HAWK">
+                    </div>
+                
+                    <div class="image-collection__container-image">
+                        <img src="../images/HAWK-detail-pictures/HAWK-foto-3.jpg" alt="HAWK">
+                    </div>
+                </div>
+                <div class="image-overlay">
+                    <div class="image-overlay__content">
+                        <span class="image-overlay__close">&times;</span>
+                        <img src="../images/close-button.png" alt="close-button">
+                    </div>
+                </div>
+
+                <h2>
+                    overzicht programmeer foto's
+                </h2>
+                <p>
+                    Klik op de foto's om ze te vergroten.
+                </p>
+                <div class="image-collection__container">
+                    <div class="image-collection__container-image">
+                        <img src="../images/HAWK-detail-pictures/HAWK-progam-foto-1.png" alt="HAWK">
                     </div>
             
                     <div class="image-collection__container-image">
-                        <img src="../images" alt="">
+                        <img src="../images/HAWK-detail-pictures/HAWK-progam-foto-2.png" alt="HAWK">
                     </div>
             
                     <div class="image-collection__container-image">
-                        <img src="../images" alt="">
+                        <img src="../images/HAWK-detail-pictures/HAWK-progam-foto-3.png" alt="HAWK">
                     </div>
                 </div>
             </div>
-            <!--<div class="image-overlay">
+            <div class="image-overlay">
                 <div class="image-overlay__content">
                     <span class="image-overlay__close">&times;</span>
                     <img src="../images/close-button.png" alt="close-button">
                 </div>
-            </div>-->                     
+            </div>                    
 
             <h3>
-                Naar broncode
+                Download Mijn GIP bundel hieronder
             </h3>
-            <div class="links">
+            <button id="downloadButton">Download GIP bundel</button>
 
-                <a class="icon-link" href="https://github.com/pgm-stefvanboven/WebDesign-Project-1-Digital-Agency" target="_blank">
-                    <i>
-                        <img src="../images/github.png" alt="github-logo">
-                    </i>
-                </a>
-            </div>
         </div>
     </div>
 
@@ -187,6 +209,8 @@
         </div>
     </div>
     <script src="../js/dropdown.js"></script>
+    <script src="../js/image-collection.js"></script>
+    <script src="../js/download.js"></script>
 </body>
 
 </html>
