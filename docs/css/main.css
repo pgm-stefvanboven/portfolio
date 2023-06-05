@@ -16,6 +16,45 @@
     --text-xl: 4rem;
 }
 
+/* import of the lettertypes */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap');
+
+h1,
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #007F7F;
+}
+
+q,
+span {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+h3,
+.skill-box .title {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+p,
+a {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+label,
+placeholder {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
 /* styling header in header.css file*/
 
 
@@ -33,7 +72,6 @@
 .container {
   max-width: 150vh;
   padding: 3rem;
-  font-size: 1.5rem;
   line-height: 1.5;
   color: #333;
 }
@@ -95,9 +133,9 @@
 .work-link {
   position: relative;
   display: inline-block;
-  color: #000;
   text-decoration: none;
-  transition: color 0.3s;
+  color: #000;
+  transition: #000 0.3s;
 }
 
 .work-link::before {
@@ -110,10 +148,6 @@
   background-color: #000;
   transform: scaleX(0);
   transition: transform 0.3s;
-}
-
-.work-link:hover {
-  color: #f00;
 }
 
 .work-link:hover::before {
@@ -132,6 +166,7 @@
 }
 
 .card {
+  background-color: #007F7F;
   border-radius: .3125rem;
   box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.2);
   max-width: 25rem;
@@ -154,9 +189,7 @@
 
 .card h2 {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333;
+  color: #fff;
 }
 
 .card-links {
@@ -166,21 +199,18 @@
 }
 
 .card-links a {
+  background-color: #67B3E6;
   padding: .625rem 1.25rem;
-  border: .0625rem solid #ccc;
+  border: .0625rem;
   border-radius: .3125rem;
   text-decoration: none;
   margin-right: 1rem;
   color: #333;
-  font-weight: 700;
   transition: all 0.3s ease;
 }
 
 .card-links a:hover {
-  background-color: #ccc;
-  color: #fff;
-  border-color: #ccc;
+  background-color: #67B3E6;
+  color: #333;
   border-radius: 2rem;
 }
-
-/* styling footer in footer.css file */ 

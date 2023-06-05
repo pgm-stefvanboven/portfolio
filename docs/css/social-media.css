@@ -17,11 +17,11 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    transition: all 0.5s cubic-bezier(1, .99, 0, 0);
 }
 
 .icon-link:hover {
     transform: scale(1.2);
-    transition: all 0.5s cubic-bezier(1, .99, 0, 0);
 }
 
 .icon-link i {

@@ -1,85 +1,100 @@
-.skills {
-  margin-top: 20px;
+.skill-box .title {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #007F7F;
+  margin-top: 3rem;
 }
 
-.skill {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+.skill-box .skill-bar {
+  height: .5rem;
+  width: 100%;
+  border-radius: .375rem;
+  margin-top: .75rem;
+  background: rgba(0,0,0,0.1);
 }
 
-.skill-info {
-  display: flex;
-  align-items: center;
-}
-
-.skill-name {
-  font-weight: bold;
-  margin-right: 15px;
-}
-
-.skill-percentage {
-  font-weight: bold;
-  margin-left: 2rem;
-}
-
-.skill-bar {
-  flex-grow: 1;
-  height: 10px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative; /* Nieuwe regel */
-}
-
-.skill-progress {
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
   height: 100%;
-  position: absolute; /* Nieuwe regel */
-  left: 0; /* Nieuwe regel */
+  width: 70%;
+  border-radius: .375rem;
+  background-color: #67B3E6;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
 }
 
-.skill-progress-inner {
-  height: 100%;
-  background-color: #4CAF50;
+.skill-per.css {
+  width: 70%;
+  animation-delay: 0.1s;
 }
 
-.skill-progress.html {
-  width: 80%;
-}
-
-.skill-progress.css {
-  width: 80%;
-}
-
-.skill-progress.js {
+.skill-per.javascript {
   width: 60%;
+  animation-delay: 0.2s;
+}
+
+.skill-per.figma {
+  width: 100%;
+  animation-delay: 0.2s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -0.875rem;
+  top: -2.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #007F;
+  padding: .125rem .375rem;
+  border-radius: .1875rem;
+  background-color: #67B3E6;
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -0.125rem;
+  height: 14px;
+  width: 18px;
+  z-index: -1;
+  background-color: #67B3E6;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 
 
 /* technologies cards styling */
-.technologies-cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 
+.technologies-items-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
-.technologies-carditem {
-    border-radius: .3125rem;
-    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.2);
-    max-width: 25rem;
-    margin-bottom: 1.25rem;
-    padding: 1.25rem;
-    margin-left: 1.25rem;
-  }
-  
-  .technologies-carditem-icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-  }
-  
+.technologies-items-list-listitms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.technologies-items-list-listitems-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0;
+}

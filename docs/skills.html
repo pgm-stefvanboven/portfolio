@@ -17,32 +17,35 @@
 
 <body>
     <div class="header">
-        <div class="header__container">
-            <div class="logo">
+        <div class="header__container-left">
+            <div class="header__container-logo">
                 <a href="index.html">
-                    <img class="logo-image" src="images/My-logo.png">
+                    <img class="header__container-logo-image" src="images/My-logo.png" alt="logo">
                 </a>
             </div>
-
-            <ul class="menu">
-                <li class="menu-item">
-                    <a class="link" href="index.html">Home</a>
-                </li>
-
-                <li class="menu-item">
-                    <a class="link active" href="skills.html">Skills</a>
-                </li>
-
-                <li class="menu-item">
-                    <a class="link" href="projects.html">Projecten</a>
-                </li>
-
-                <li class="menu-item">
-                    <a class="link" href="contact.html">Contact</a>
-                </li>
-            </ul>
         </div>
 
+        <div class="header__container-right">
+            <div class="header__container-right-menu">
+                 <ul class="header__container-right-menulist">
+                    <li>
+                        <a class="header__container-right-menulist-link" href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="header__container-right-menulist-link active" href="skills.html">Skills</a>
+                    </li>
+
+                    <li>
+                        <a class="header__container-right-menulist-link" href="projects.html">Projecten</a>
+                    </li>
+                        
+                    <li>
+                        <a class="header__container-right-menulist-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
     </div>
 
     <div class="dropdown">
@@ -99,43 +102,42 @@
 
     <div class="container">
         <div class="intro">
-
             <h2>Skills</h2>
-            <div class="skills">
-                <div class="skill">
-                    <div class="skill-info">
-                        <span class="skill-name">HTML</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress html">
-                            <div class="skill-progress-inner"></div>
-                        </div>
-                    </div>
-                    <span class="skill-percentage">80%</span>
+            <div class="skill-box">
+                <span class="title">HTML</span>
+                <div class="skill-bar">
+                    <span class="skill-per html">
+                        <span class="tooltip">70%</span>
+                    </span>
                 </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span class="skill-name">CSS</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress css">
-                            <div class="skill-progress-inner"></div>
-                        </div>
-                    </div>
-                    <span class="skill-percentage">80%</span>
+            </div>
+
+            <div class="skill-box">
+                <span class="title">CSS</span>
+                <div class="skill-bar">
+                    <span class="skill-per css">
+                        <span class="tooltip">70%</span>
+                    </span>
                 </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span class="skill-name">JavaScript</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress js">
-                            <div class="skill-progress-inner"></div>
-                        </div>
-                    </div>
-                    <span class="skill-percentage">60%</span>
+            </div>
+
+            <div class="skill-box">
+                <span class="title">JavaScript</span>
+                <div class="skill-bar">
+                    <span class="skill-per javascript">
+                        <span class="tooltip">60%</span>
+                    </span>
                 </div>
-            </div>                                  
+            </div>
+
+            <div class="skill-box">
+                <span class="title">Figma</span>
+                <div class="skill-bar">
+                    <span class="skill-per figma">
+                        <span class="tooltip">100%</span>
+                    </span>
+                </div>
+            </div>
 
 
             <div class="services">
@@ -143,8 +145,7 @@
                     Diensten
                 </h2>
                 <p>
-                    Ik kan u helpen met het ontwerpen en bouwen van uw website. Ervaring heb ik nog niet maar ik leer
-                    elke dag bij en ik ben ervan overtuigd om u een mooi eindresultaat te kunnen afleveren.
+                    Ik kan u helpen bij het ontwerpen en bouwen van uw website. Hoewel ik nog geen ervaring heb, leer ik elke dag bij en ben ik ervan overtuigd dat ik u een prachtig eindresultaat kan leveren.
                 </p>
             </div>
 
@@ -153,29 +154,26 @@
                     Technologieën
                 </h2>
 
-                <div class="technologies-cards">
-                    <div class="technologies-carditem">
-                        <img class="technologies-carditem-icon" src="images/figma-logo.png" alt="Card Image">
-                    </div>
+                <div class="technologies-items">
+                    <ul class="technologies-items-list">
+                        <li class="technologies-items-list-listitms">
+                            <img class="technologies-items-list-listitems-icon" src="images/html.png" alt="html-logo">
+                        </li>
 
-                    <div class="technologies-carditem">
-                        <img class="technologies-carditem-icon" src="images/HTML.png" alt="Card Image">
-                    </div>
+                        <li class="technologies-items-list-listitms">
+                            <img class="technologies-items-list-listitems-icon" src="images/css.png" alt="css-logo">
+                        </li>
 
-                    <div class="technologies-carditem">
-                        <img class="technologies-carditem-icon" src="images/CSS.png" alt="Card Image">
-                    </div>
+                        <li class="technologies-items-list-listitms">
+                            <img class="technologies-items-list-listitems-icon" src="images/JavaScript-Logo.png" alt="javascript-logo">
+                        </li>
 
-                    <div class="technologies-carditem">
-                        <img class="technologies-carditem-icon" src="images/JavaScript-Logo.png" alt="Card Image">
-                    </div>
-
-                    <div class="technologies-carditem">
-                        <img class="technologies-carditem-icon" src="images/React.png" alt="Card Image">
-                    </div>
+                        <li class="technologies-items-list-listitms">
+                            <img class="technologies-items-list-listitems-icon" src="images/figma-logo.png" alt="figma-logo">
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </div>
     </div>
 

@@ -1,13 +1,14 @@
 /* Stijl de downloadknop naar wens */
 #downloadButton {
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #67B3E6;
+    color: #333;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #downloadButton:hover {
-    background-color: #45a049;
+    border-radius: 2rem;
 }

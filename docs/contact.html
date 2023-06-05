@@ -17,32 +17,35 @@
 
 <body>
     <div class="header">
-        <div class="header__container">
-            <div class="logo">
+        <div class="header__container-left">
+            <div class="header__container-logo">
                 <a href="index.html">
-                    <img class="logo-image" src="images/My-logo.png">
+                    <img class="header__container-logo-image" src="images/My-logo.png" alt="logo">
                 </a>
             </div>
-
-            <ul class="menu">
-                <li class="menu-item">
-                    <a class="link" href="index.html">Home</a>
-                </li>
-
-                <li class="menu-item">
-                    <a class="link" href="skills.html">Skills</a>
-                </li>
-
-                <li class="menu-item">
-                    <a class="link" href="projects.html">Projecten</a>
-                </li>
-
-                <li class="menu-item">
-                    <a class="link active" href="contact.html">Contact</a>
-                </li>
-            </ul>  
         </div>
-      
+
+        <div class="header__container-right">
+            <div class="header__container-right-menu">
+                 <ul class="header__container-right-menulist">
+                    <li>
+                        <a class="header__container-right-menulist-link" href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="header__container-right-menulist-link" href="skills.html">Skills</a>
+                    </li>
+
+                    <li>
+                        <a class="header__container-right-menulist-link" href="projects.html">Projecten</a>
+                    </li>
+                        
+                    <li>
+                        <a class="header__container-right-menulist-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
     </div>
 
     <div class="dropdown">
@@ -100,10 +103,10 @@
     <div class="container">
         <div class="intro">
             <p>
-                Indien u mij een vraag wilt stellen, of een suggestie wilt doen aarzel niet om contact met me op te nemen.
+                Indien u vragen heeft of suggesties wilt doen, aarzel dan niet om contact met mij op te nemen.
             </p>
 
-            <form id="contact-form">
+            <form id="contact-form" onsubmit="submitForm(event)">
                 <h2>Contact me</h2>
                 <div class="form-group">
                     <label for="name">Naam</label>
@@ -133,6 +136,7 @@
     </div>
 
     <script src="js/dropdown.js"></script>
+    <script src="js/contactform.js"></script>
 </body>
 
 </html>
