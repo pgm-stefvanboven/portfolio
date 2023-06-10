@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    background-color: #C70039;
+    background-color: #88cccc;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@
 
 .header__container-right-menulist-link {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     border: none;
     outline: none;
     padding: .625rem 1rem;
@@ -72,7 +72,7 @@
 
 .header__container-right-menulist-link.active,
 .header__container-right-menulist-link:hover {
-    background-color: #b4924e;
+    background-color: #FFFFAA;
     color: #333;
     border-radius: 2rem;
 }
