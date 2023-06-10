@@ -35,10 +35,16 @@
     .dropdown {
         display: block;
         position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
     }
 
     .dropdown-toggle {
         width: 100%;
+        color: #fff;
+        background-color: #C70039;;
     }
 
     .dropdown-menu {

@@ -19,32 +19,62 @@
 /* import of the lettertypes */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap');
 
-h1,
-h2 {
+h1 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 2em;
   font-weight: 700;
   color: #007F7F;
 }
 
-q,
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #007F7F;
+}
+
+.card h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #007F7F;
+}
+
 span {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 500;
 }
 
+span.link-caption-info,
+span.link-caption-github,
+span.link-caption-website,
+span.link-caption-download {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+}
+
 h3,
 .skill-box .title {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 600;
+  color: #007F7F;
 }
 
 p,
-a {
+q,
+.work-link {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 21px;
+  font-weight: 300;
+}
+
+
+a {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -56,17 +86,6 @@ placeholder {
 }
 
 /* styling header in header.css file*/
-
-
-
-/* Media query for screens with a width of 768px or more */
-@media screen and (max-width: 1009.60px) {
-  div.clock {
-    width: 0rem;
-    height: 0rem;
-  }
-}
-
 
 /* styling content of the website */
 .container {
@@ -159,8 +178,6 @@ placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
   background-color: #fff;
   border-radius: .3125rem;
 }
@@ -169,14 +186,13 @@ placeholder {
   background-color: #007F7F;
   border-radius: .3125rem;
   box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.2);
-  max-width: 25rem;
+  max-width: 19rem;
   margin: 0 auto;
   margin-bottom: 1.25rem;
-  padding: 1.25rem;
   margin-left: 1.25rem;
 }
 
-.card img {
+.card-img {
   width: 100%;
   height: auto;
   border-top-left-radius: .3125rem;
@@ -198,19 +214,125 @@ placeholder {
   margin-top: 1.25rem;
 }
 
-.card-links a {
-  background-color: #67B3E6;
-  padding: .625rem 1.25rem;
-  border: .0625rem;
-  border-radius: .3125rem;
-  text-decoration: none;
-  margin-right: 1rem;
-  color: #333;
-  transition: all 0.3s ease;
+.btn-inf-img {
+  width: 54%;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
-.card-links a:hover {
-  background-color: #67B3E6;
-  color: #333;
-  border-radius: 2rem;
+.btn-github-img {
+  width: 36%;
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+}
+
+.btn-website-img {
+  width: 40%;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.btn-download-img {
+  width: 37%;
+  margin-top: 0.5rem;
+  margin-left: 2.3rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card-links {
+  position: relative;
+}
+
+.link-item {
+  position: relative;
+  display: inline-block;
+}
+
+.link-caption-info {
+  position: absolute;
+  bottom: -20px;
+  margin-bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.link-item:hover .link-caption-info {
+  opacity: 1;
+}
+
+.link-caption-github {
+  position: absolute;
+  bottom: -20px;
+  margin-bottom: 0;
+  left: 57%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.link-item:hover .link-caption-github {
+  opacity: 1;
+}
+
+.link-caption-website {
+  position: absolute;
+  bottom: -20px;
+  margin-bottom: 0;
+  left: 53%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.link-item:hover .link-caption-website {
+  opacity: 1;
+}
+
+.link-caption-download {
+  position: absolute;
+  bottom: -20px;
+  margin-bottom: 0;
+  left: 55%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .link-caption-info {
+    left: 55%;
+  }
+
+  .link-caption-github {
+    left: 68%;
+  }
+
+  .link-caption-website {
+    left: 60%;
+  }
+
+  .link-caption-download {
+    left: 63%;
+  }
+}
+
+.link-item:hover .link-caption-download {
+  opacity: 1;
 }

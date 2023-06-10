@@ -72,13 +72,13 @@
 
 .header__container-right-menulist-link.active,
 .header__container-right-menulist-link:hover {
-    background-color: #67B3E6;
+    background-color: #b4924e;
     color: #333;
     border-radius: 2rem;
 }
 
-/* Media query for screens with a width of 600px or more */
-@media screen and (max-width: 600px) {
+/* Media query for screens with a width of 769px or more */
+@media screen and (max-width: 769px) {
     .header__container-logo {
         width: 0;
         height: 0;
