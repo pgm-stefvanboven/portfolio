@@ -28,7 +28,8 @@
 }
 
 .dropdown-menu a:hover {
-    background-color: #ddd;
+    background-color: #FFFFAA;
+    color: #333;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,8 +44,8 @@
 
     .dropdown-toggle {
         width: 100%;
-        color: #fff;
-        background-color: #C70039;;
+        color: #000;
+        background-color: #88cccc;
     }
 
     .dropdown-menu {
